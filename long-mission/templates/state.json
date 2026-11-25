@@ -1,0 +1,53 @@
+{
+  "mission_id": "M-YYYYMMDD-HHMM",
+  "goal": "",
+  "started_at": "YYYY-MM-DDTHH:MM:SS+00:00",
+  "updated_at": "YYYY-MM-DDTHH:MM:SS+00:00",
+  "status": "running",
+  "plan_version": 1,
+  "current_milestone": "M1",
+  "budget": {
+    "max_hours": 8,
+    "max_iterations": 100,
+    "max_cost_usd": null
+  },
+  "counters": {
+    "iterations": 0,
+    "consecutive_no_progress": 0,
+    "same_failure_count": 0,
+    "replan_count": 0,
+    "critical_blocker_attempts": 0,
+    "cost_usd": 0
+  },
+  "limits": {
+    "no_progress_limit": 5,
+    "same_failure_limit": 3,
+    "critical_blocker_limit": 3,
+    "max_replans": 6
+  },
+  "acceptance": [
+    {
+      "id": "A1",
+      "mandatory": true,
+      "criterion": "",
+      "check": "",
+      "passed": false,
+      "evidence": [],
+      "evaluator_verdict": null
+    }
+  ],
+  "final_verification": {
+    "passed": false,
+    "clean_state": false,
+    "no_regressions": false,
+    "evaluator_verdict": null,
+    "evidence": []
+  },
+  "partial_success": {
+    "minimum_viable_criteria": ["A1"]
+  },
+  "safety": {
+    "stop_file": ".mission/AGENT_STOP",
+    "unauthorized_action": false
+  }
+}
