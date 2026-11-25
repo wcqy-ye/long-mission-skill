@@ -75,3 +75,7 @@ touch .mission/PAUSE        # 暂时放行 Stop hook；删除该文件后恢复�
 ```bash
 tar --exclude='__pycache__' --exclude='*.pyc' -czf long-mission-skill.tar.gz long-mission
 ```
+
+## License
+
+[MIT](LICENSE)
